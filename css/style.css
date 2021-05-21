@@ -1,0 +1,159 @@
+:root {
+    --cor-principal: #92c1ee;
+    --cor-secundaria: #fff;
+    --cor-tercearia: #dfdfdf;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+    color: #3C5062;
+}
+
+input {
+    padding: 8px;
+    border-radius: 3px;
+    border: solid var(--cor-tercearia) thin;   
+}
+
+select {
+    padding: 8px;
+    border-radius: 3px;
+    border: solid var(--cor-tercearia) thin; 
+}
+
+textarea {
+    border-radius: 3px;
+    border: solid var(--cor-tercearia) thin;
+    resize: none; 
+}
+
+.container {
+    max-width: 700px;
+    margin: 7% auto;    
+    border: 1px solid var(--cor-tercearia);
+}
+
+.container h2 {
+    background-color: var(--cor-principal);
+    padding: 20px 50px;
+}
+
+.container form {
+    padding: 20px 50px;
+}
+
+.primeira-linha {
+    display: flex;
+    width: 100%;
+}
+
+.primeira-linha .form-nome {
+    width: 40%;
+}
+
+.primeira-linha .form-nome input {
+    width: 90%;
+}
+
+.primeira-linha .form-email {
+    width: 60%;
+}
+
+.primeira-linha .form-email input {
+    width: 100%;
+}
+
+.segunda-linha {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.segunda-linha .form-senha {
+    width: 33%;
+}
+
+.segunda-linha .form-senha input {
+    width: 90%;
+}
+
+.segunda-linha .form-sexo {
+    width: 34%;
+}
+
+.segunda-linha .form-sexo select {
+    width: 90%;
+}
+
+.segunda-linha .form-stack {
+    width: 33%;
+}
+
+.segunda-linha .form-stack select {
+    width: 100%;
+}
+
+.terceira-linha {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.terceira-linha .form-area {
+    width: 100%;
+}
+
+.terceira-linha textarea {
+    height: 100px;
+    width: 100%;
+}
+
+.quarta-linha {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button {
+    border-radius: 5px;
+    width: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#btn-salvar {
+    background: #2C88D9;
+    padding: 10px;
+    border: none;
+    color: var(--cor-secundaria);
+    margin-right: 15px;
+  }
+
+  #btn-salvar:hover {
+    background-color: #92c1ee;
+  }
+  
+  #btn-cancelar {
+    background: transparent;
+    border-color: var(--cor-principal);
+    border-style: solid;
+    color: #2C88D9;
+    padding: 12px;    
+  }
+
+  #btn-cancelar:hover {
+      background-color: var(--cor-tercearia);
+  }
